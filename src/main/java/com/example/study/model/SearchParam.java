@@ -1,37 +1,17 @@
 package com.example.study.model;
 
+import jdk.jfr.DataAmount;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor //모든 매개변수를 가지는 생성자가 추가됨
+//자바코드를 줄여줌으로 생산성을 높여서 롬복을 많이 사용함
 public class SearchParam {
 
     private String account;
     private String email;
     private int page;
 
-    //{"account" :"","email" :"","page" :""}
 
-    //해당 파라미터를 받기위해서는 생성자와 getter/setter를 받아야함
-    //code > generate > Getter and Setter
-
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public int getPage() {
-        return page;
-    }
-
-    public void setPage(int page) {
-        this.page = page;
-    }
 }
